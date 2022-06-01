@@ -1,0 +1,846 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    padding: 0;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #717171;
+}
+
+/* CONFIGURAÇÕES GERAIS */
+
+body {
+    background-color: #dddddd;
+}
+
+a {
+    text-decoration: none;
+}
+
+div {
+    align-items: center;
+}
+
+/* NAVEGAÇÃO */
+
+.logo {
+    padding: 25px;
+    color: white;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    font-weight: 550;
+    font-size: 22.5px;
+    transition: ease-in-out;
+    transition-duration: 0.32s;
+}
+
+.logo:hover {
+    letter-spacing: 5px;
+    color: #32c6e0;
+}
+
+.nav {
+    animation: gradiente 10s ease-in-out alternate infinite;
+    background: linear-gradient(-45deg, #00070e, #011126, #051830, #023059) no-repeat;
+    background-size: 300% 300%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 72px;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+}
+
+.nav-list > li {
+    cursor: pointer;
+    display: flex;
+    margin-left: 32px;
+    letter-spacing: 1.5px;
+    color: white;
+    transition: ease-in-out;
+    transition-duration: 0.35s;
+}
+
+.nav-option {
+    display: flex;
+    color: white;
+    cursor: pointer;
+    margin-left: 32px;
+    letter-spacing: 1.5px;
+    color: white;
+}
+
+.nav-list > li:hover {
+    color: #32c6e0;
+    text-decoration: underline;
+}
+
+/* CONFIGURAÇÕES DE TEXTOS */
+
+.title {
+    padding-top: 35px;
+    padding-bottom: 25px;
+    color: #023059;
+    font-size: 20px;
+    font-weight: none;
+    text-align: center;
+}
+
+.sub-title {
+    padding: 15px;
+    color: #085A8C;
+    font-size: 16.5px;
+    font-weight: none;
+    margin-left: 25px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.torneios-recentes {
+    color: #023059;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+/* PÁGINA PRINCIPAL */
+
+.principal {
+    background-color: white;
+    margin: auto;
+    max-width: 1050px;
+    width: 100%;
+}
+
+/* FORMATO */
+
+.fase {
+    font-weight: 565;
+    margin-top: 6px;
+    margin-left: 25px;
+}
+
+.dec1 {
+    margin-top: 6px;
+    margin-left: 40px;
+}
+
+.dec2 {
+    margin-top: 6px;
+    margin-left: 60px;
+}
+
+#final {
+    margin-bottom: 25px;
+}
+
+.final2019 {
+    margin-left: 275px;
+    margin-top: -125px;
+}
+
+/* ESPAÇOS */
+
+#espaco-cima {
+    margin-top: 50px;
+}
+
+#espaco-baixo {
+    margin-bottom: 50px;
+}
+
+/* TABELAS */
+
+table {
+    border-collapse: collapse;
+}
+
+.table-cima {
+    margin-top: -365px;
+    margin-left: 565px;
+}
+
+.table-2018 {
+    margin-top: -275px;
+    margin-left: 565px;
+}
+
+td {
+    min-width: 15px;
+    color: #414141;
+    font-weight: 550;
+    text-align: center;
+    border: 1px solid #71717180;
+    padding: 7.5px;
+    border-collapse: collapse;
+}
+
+tr {
+    border-collapse: collapse;
+}
+
+.lugar {
+    color: white;
+    background-color: #023059;
+}
+
+.time {
+    color: white;
+    background-color: #023059;
+}
+
+.premio {
+    color: white;
+    background-color: #023059;
+}
+
+#primeiro {
+    color: white;
+    background-color: rgb(255, 208, 0);
+}
+
+#segundo {
+    color: white;
+    background-color: silver;
+}
+
+#terceiro {
+    color: white;
+    background-color: #d69657;
+}
+
+#position1 {
+    color: white;
+    background-color: #32c6e0;
+}
+
+#position2 {
+    color: white;
+    background-color: #007F99;
+}
+
+#position3 {
+    color: white;
+    background-color: #166F82;
+}
+
+#position4 {
+    color: white;
+    background-color: #2D606B;
+}
+
+#colorido {
+    background-color: rgba(153, 153, 153, 0.514);
+}
+
+#esquerda {
+    margin-left: 100pxf;
+}
+
+/* GRID PARTICIPANTES */
+
+.grid1 {
+    margin-top: 40px;
+    margin-left: 115px;
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 10px;
+    max-width: 150px;
+}
+
+.imagem {
+    padding: 50px;
+    cursor: pointer;
+    padding: 10px;
+    max-width: 125px;
+    height: 75%;
+    max-height: 125px;
+    transition: ease-in-out;
+    transition-duration: 0.25s;
+}
+
+.imagem:hover {
+    margin-top: -5px;
+}
+
+#juventus {
+    margin-left: 30px;
+}
+
+#real {
+    margin-left: 15px;
+}
+
+#river {
+    margin-left: 10px;
+}
+
+.mata-mata {
+    cursor: pointer;
+    text-align: left;
+    width: 135px;
+    transition: ease-in-out;
+    transition-duration: 0.35s;
+}
+
+#left {
+    cursor: pointer;
+    text-align: left;
+}
+
+.mata-mata:hover {
+    box-shadow: 0 0 1em #717171;
+}
+
+.grid_p {
+    transition-duration: 0.5s;
+    transition: ease-in-out;
+    cursor: pointer;
+    color: #12245a;
+    font-weight: 565;
+    text-align: center;
+    width: 135px;
+}
+
+.grid_p:hover {
+    text-decoration: underline;
+}
+
+.classe_legends {
+    font-size: 20px;
+    color: #051830;
+    margin: auto;
+    width: 175px;
+    transition: ease-in-out;
+    transition-duration: 0.25s;
+}
+
+.classe_legends:hover {
+    cursor: pointer;
+    padding: 5px;
+    border-bottom: 1px solid #051830;
+}
+
+.classe_desafiantes {
+    font-size: 20px;
+    color: #051830;
+    margin: 25px auto 0 auto;
+    width: 210px;
+    transition: ease-in-out;
+    transition-duration: 0.25s;
+}
+
+.classe_desafiantes:hover {
+    cursor: pointer;
+    padding: 5px;
+    border-bottom: 1px solid #051830;
+}
+
+.nome-time {
+    cursor: pointer;
+    text-align: center;
+    font-weight: 565;
+    color: #383838;
+    transition: ease-in-out;
+    transition-duration: 0.3s;
+}
+
+.nome-time:hover {
+    color: rgba(163, 130, 19, 0.836);
+}
+
+/* TABELA CAMPEONATO CHALLENGERS */
+
+.classificacao1 {
+    margin-top: 35px;
+    margin-left: 250px;
+}
+
+.grupo {
+    margin-top: 35px;
+    margin-left: 50px;
+}
+
+.nome-equipe {
+    cursor: pointer;
+    text-align: left;
+    width: 200px;
+    transition: ease-in-out;
+    transition-duration: 0.35s;
+}
+
+.nome-equipe:hover {
+    box-shadow: 0 0 1em #717171;
+}
+
+#primeiros {
+    background: rgb(221,244,221);
+}
+
+#segundos {
+    background-color: rgb(229,244,198);
+}
+
+#eliminados {
+    background-color: rgb(251,223,223);
+}
+
+#primeiros-mata {
+    text-align: right;
+    background: rgb(221,244,221);
+}
+
+#mata {
+    text-align: right;
+}
+
+.mini-logo {
+    vertical-align: center;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: 7.5px;
+    max-height: 17.5px;
+    max-width: 25px;
+    transition: ease-in-out;
+    transition-duration: 0.3s;
+}
+
+.mini-logo:hover {
+    color: #023059;
+}
+
+#mata-mata-logo {
+    text-align: right;
+}
+
+#juventus-mini {
+    margin-left: 15px;
+}
+
+/* CONFIGURAÇÕES JOGOS MATA-MATA */
+
+.jogo1 {
+    margin-left: 50px;
+    margin-top: 15px;
+}
+
+.jogo2 {
+    margin-left: 50px;
+    margin-top: 35px;
+}
+
+.final {
+    margin-left: 200px;
+    margin-top: -165px;
+}
+
+.teste {
+    margin-top: 150px;
+}
+
+.placar {
+    border: none;
+    width: 35px;
+}
+
+.simule {
+    text-align: justify;
+    color: #383838;
+    margin-left: 40px;
+    margin-bottom: 25px;
+    width: 500px;
+}
+
+.enviar {
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 85px;
+    color: white;
+    border: none;
+    border-radius: 7.5px;
+    padding: 3.5px;
+    background-color:#051830;
+}
+
+#res {
+    color: rgb(136, 27, 36);
+}
+
+/* CONFIGURAÇÕES RANKING TOP20 */
+
+.raking-table {
+    box-shadow: 0 0 10px #9c9b9b;
+}
+
+.div-ranking {
+    padding: 10px;
+    line-height: 10px;
+    width: 800px;
+    transition: ease-in-out;
+    transition-duration: 0.s;
+}
+
+.div-ranking:hover {
+    cursor: pointer;
+    box-shadow: 0 0 1em #9c9b9b;
+}
+
+.imagem-ranking {
+    max-height: 30px;
+    max-width: 30px;
+}
+
+.nome-ranking {
+    margin-left: 25px;
+    text-align: left;
+    width: 300px;
+}
+
+.pontuacao-ranking {
+    text-align: left;
+    width: 150px;
+}
+
+.fileira {
+    text-align: left;
+    width: 600px;
+}
+
+#equipe-ranking20 {
+    padding: 10px;
+    line-height: 10px;
+    border: none;
+    background-color: rgba(191, 194, 194, 0.514);
+}
+
+#ranking-sub-title {
+    padding-bottom: 25px ;
+    color: #023059;
+    font-size: 16.5px;
+    font-weight: none;
+    text-align: center;
+    background-color: rgba(191, 194, 194, 0.514);
+}
+
+/* CAMPEONATOS ANTERIORES */
+
+.campeonato-anterior {
+    color: #166F82;
+    text-align: left;
+    margin-left: 50px;
+}
+
+.campeonato-futuro {
+    color: #166F82;
+    margin-left: 500px;
+}
+
+/* CONFIG TORNEIOS */
+
+.container {
+    display: grid;
+    margin: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10px;
+}
+
+.foto-container {
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    max-height: 150px;
+    max-width: 300px;
+}
+
+.container-div {
+    height: 250px;
+    margin: auto;
+}
+
+.p-torneio {
+    text-align: center;
+}
+
+.h1-torneio {
+    text-align: center;
+}
+
+.realizado {
+    font-weight: 565;
+    color: #6e0c24d5;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.nao-realizado {
+    font-weight: 565;
+    color: #54711b;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* TABLE QUALIFIERS */
+
+.qualifier {
+    margin-left: 50px;
+}
+
+/* RODADAS */
+
+.rodadas {
+    margin-top: 45px;
+    margin-bottom: -25px;
+    margin-left: 251px;
+}
+
+.rodada {
+    background-color: rgba(153, 153, 153, 0.514);
+}
+
+.sub-rodada {
+    padding: 3.5px;
+    height: 5px;
+    background-color: rgba(153, 153, 153, 0.514);
+    font-size: 11.5px;
+}
+
+/* SISTEMA DE QUARTAS DE FINAIS */
+
+.semi1-quartas {
+    margin-top: -115px;
+    margin-left: 265px;
+}
+
+.semi2-quartas {
+    margin-top: -250px;
+    margin-left: 265px;
+}
+
+.final-quartas {
+    margin-top: 15px;
+    margin-left: 465px;
+}
+
+/* PAGAMENTO */
+
+.pagamento {
+    margin: 100px auto 0px auto;
+    background-color: rgb(234, 236, 236);
+    width: 600px;
+    border: 1px solid #71717173;
+    border-radius: 10px;
+}
+
+.body-doacoes {
+    background: url(pagamento2.gif);
+    background-repeat: repeat;
+    background-attachment: fixed;
+    transition: ease-in-out;
+}
+
+.doacoes {
+    text-align: center;
+    padding: 20px;
+    font-size: 22.5px;
+    color: #023059;
+}
+
+.campo {
+    margin-left: 50px;
+    color: #023059;
+    font-size: 15.5px;
+}
+
+.input1 {
+    padding: 5px;
+    border: 1px solid #71717156;
+    width: 500px;
+    margin-bottom: 20px;
+}
+
+.input2 {
+    padding: 5px;
+    border: 1px solid #71717156;
+    width: 500px;
+    margin-bottom: 5px;
+}
+
+.input3 {
+    padding: 5px;
+    border: 1px solid #71717156;
+    width: 242px;
+}
+
+.valor {
+    padding: 5px;
+    border: 1px solid #71717156;
+    width: 500px;
+    margin-bottom: 20px;
+}
+
+.tipo-cartao {
+    padding: 5px;
+    border: 1px solid #71717156;
+    width: 500px;
+    margin-bottom: 20px;
+}
+
+.botao {
+    margin: 50px 0px 35px 265px; 
+    position: relative;
+    padding: 5px;
+    width: 70px;
+    height: 30px;
+    background-color: #202231;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: width 0.5s, border-radius 0.5s ease-in-out;
+}
+
+.botao *{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.25s;
+}
+
+.text {
+    color: #dddd;
+}
+
+.icon {
+    color: white;
+    opacity: 0;
+}
+
+.botao:focus {
+    margin: 50px 0px 35px 285px; 
+    width: 30px;
+    background-color: #44c88a;
+    border-radius: 50%;
+}
+
+.botao:focus .text {
+    opacity: 0;
+}
+
+.botao:focus .icon {
+    color: white;
+    opacity: 1;
+    transition-delay: 0.5s;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 750px) {
+    .grid1 {
+        margin-top: 40px;
+        margin-left: 50px;
+        display: grid;
+        grid-gap: 50px;
+        grid-template-columns: 1fr 1fr;
+        padding: 10px;
+        max-width: 150px;
+    }
+    .container {
+        display: grid;
+        margin: auto;
+        grid-template-columns: 1fr 1fr;
+        padding: 10px;
+        grid-gap: 15px;
+    }
+    .nav-option {
+        font-size: 15px;
+        display: flex;
+        color: white;
+        cursor: pointer;
+        margin-left: 10px;
+        letter-spacing: 1.5px;
+        color: white;
+    }
+    .table-cima {
+        margin-top: 0;
+        margin-left: 50px;
+    }
+    .classificacao1 {
+        margin-top: 35px;
+        margin-left: 12.5px;
+    }
+    .sub-title {
+        text-align: center;
+    }
+    .rodadas {
+        margin-left: 15px;
+    }
+    .nav-list > li {
+        margin-left: 16px;
+    }
+}
+
+@media (max-width: 640px) {
+    .jogo1 {
+        margin-left: 10px;
+    }
+    .jogo2 {
+        margin-left: 10px;
+    }
+    .semi1-quartas {
+        margin-left: 205px;
+    }
+    .semi2-quartas {
+        margin-left: 205px;
+    }
+    .final-quartas {
+        margin-left: 405px;
+    }
+}
+
+@media (max-width: 550px) {
+    .container {
+        display: grid;
+        margin: auto;
+        grid-template-columns: 1fr;
+    }
+    .container-div {
+        height: 225px;
+    }
+}
+
+@media (max-width: 500px) {
+    .grid1 {
+        margin-left: 25px;
+    }
+    .table-cima {
+        margin-left: 25px;
+    }
+    .classificacao1 {
+        margin-left: 0px;
+    }
+    .rodadas {
+        margin-left: 0px;
+    }
+}
+
+/* ANIMAÇÕES */
+
+@keyframes gradiente {
+    from {
+        background-position: 0 50%;
+    }
+    to {
+        background-position: 100% 50%;
+    }
+}

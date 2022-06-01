@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doações</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body-doacoes">
+    
+    <!-- NAVEGAÇÃO -->
+
+    <header>
+        <nav class="nav">
+            <a href="mundial2019-1.html" class="logo">PIFAPédia</a>
+            <ul class="nav-list">
+                <li><a href="ranking.html" class="nav-option">Ranking</a></li>
+                <li><a href="torneios.html" class="nav-option">Torneios</a></li>
+                <li><a href="pagamento.html" class="nav-option">Doações</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="pagamento">
+        
+        <section>
+            <h1 class="doacoes">
+                Doações
+            </h1>
+            <p>
+
+            </p>
+        </section>
+        
+        <section>
+            <div>
+                <p class="campo">Nome Completo
+                    <br>
+                    <input type="text" name="requisito1" id="nome" class="input1" placeholder="Digite Aqui" autcomplete="off" required>
+                </p>
+                <p class="campo">Valor Doação
+                    <br>
+                    <select name="" id="valor" class="valor" required>
+                        <option value="2">R$2,00</option>
+                        <option value="5">R$5,00</option>
+                        <option value="10">R$10,00</option>
+                        <option value="25">R$25,00</option>
+                        <option value="50">R$50,00</option>
+                    </select>
+                </p>
+                <p class="campo">Tipo do Cartão
+                    <br>
+                    <select name="" id="tipo" class="tipo-cartao" required>
+                        <option value="mastercard">Mastercard</option>
+                        <option value="visa">Visa</option>
+                    </select>
+                </p>
+                <p class="campo">Informações do Cartão
+                    <br>
+                    <input type="number" name="numero" id="numero-cartao" class="input2" placeholder="Digite Aqui" autocomplete="off" required>
+                    <input type="text" name="nomec" id="nome-cartao" class="input2" placeholder="Nome no Cartão" autocomplete="off" required>
+                    <input type="date" name="mmaa" id="validade" class="input3" autocomplete="off" placeholder="MM / AA" required>
+                    <input type="number" name="codseg" id="codigo-seguranca" class="input3" placeholder="Código de Segurança" autocomplete="off" required>
+                </p>
+
+                <button class="botao">
+                    <span class="text">
+                        Finalizar
+                    </span>
+                    <i class="icon">✔</i>
+                </button>
+
+            </div>
+        </section>
+    </main>
+</body>
+</html>
